@@ -25,7 +25,7 @@ body {
   font-weight: 600;
 }
 
-.my-info ul {
+.my-info-ul {
   display: none;
 }
 
@@ -109,7 +109,7 @@ body {
 }
 
 .recent-work {
-  height: 93.5vh;
+  height: 84vh;
   border: 1px solid #dfe1e6;
   box-sizing: border-box;
   border-radius: 16px;
@@ -120,10 +120,10 @@ body {
 
 .box {
   width: 100%;
-  height: 46.5%;
+  height: 47.8%;
   background-color: #fff;
   box-sizing: border-box;
-  margin: 283px auto 7px auto;
+  margin: 240px auto 7px auto;
   border-radius: 16px;
 }
 
@@ -217,12 +217,6 @@ button {
   background-image: url(./images/about-me2.png);
   background-repeat: no-repeat;
   background-position: top 230px left 0;
-}
-
-.second-img {
-  background-image: url(./images/about-me2.png);
-  background-repeat: no-repeat;
-  background-position: top 10px left 0;
 }
 
 .btn-2 {
@@ -349,6 +343,10 @@ textarea {
   background-color: #fff;
 }
 
+.contact hr {
+  display: none;
+}
+
 .terminal-line p {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -360,8 +358,339 @@ textarea {
 }
 
 .terminal-line hr {
+  display: block;
   width: 28%;
   border: 2px solid #0d151e;
   align-items: center;
   margin: 10px auto;
+}
+
+@media (min-width: 768px) {
+  .my-info .name {
+    display: none;
+  }
+
+  .my-info .harmburger {
+    display: none;
+  }
+
+  .my-info-ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  .my-info-ul li {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    list-style-type: none;
+    padding: 20px 10px 20px 10px;
+  }
+
+  .first-background {
+    width: 100%;
+    height: 110vh;
+    background-image: url('./images/front-page-desktop.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-color: #fff;
+  }
+
+  .first-background h1 {
+    font-size: 35px;
+    line-height: 52px;
+  }
+
+  .first-background h2 {
+    font-size: 35px;
+    line-height: 52px;
+  }
+
+  .first-background p {
+    width: 61.4%;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 28px auto 10px auto;
+  }
+
+  .work hr {
+    display: none;
+  }
+
+  .my-recent-work {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    margin: 0 20px;
+  }
+
+  .btn {
+    width: 38%;
+    padding: 6px 5px;
+  }
+
+  .about-me .btn-2 {
+    width: 15%;
+  }
+
+  .recent-work {
+    height: 75vh;
+    margin: 100px auto -72px auto;
+    width: 87%;
+  }
+
+  .box {
+    width: 100%;
+    height: 47.8%;
+    background-color: #fff;
+    box-sizing: border-box;
+    margin: 250px auto 7px auto;
+    border-radius: 16px;
+  }
+
+  .box ul {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 2px;
+    margin-right: 10px;
+  }
+
+  .about-me {
+    background-image: url(./images/illustration-about\ me-1-desktop@2x.png), url(./images/illustration-about-me-2-desktop@2x.png);
+    background-repeat: no-repeat;
+    background-position: top 10px right 0, bottom 5px left 0;
+    background-size: 150px;
+    background-color: #fff;
+  }
+
+  .about-me p {
+    margin: 0 auto;
+    width: 61.4%;
+    padding: 18px 28px 72px 30px;
+  }
+
+  .contact-details .btn {
+    width: 37%;
+    margin: 5px 24px;
+  }
+
+  .tech {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    margin: 0 20px;
+  }
+
+  .contact-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    margin: 80px 20px 40px 24px;
+  }
+
+  input {
+    padding: 15px 0 15px 15px;
+    width: 94%;
+  }
+
+  textarea {
+    font-size: 15px;
+    list-style-type: none;
+    width: 94%;
+  }
+
+  .contact p {
+    font-size: 30px;
+    padding: 54px 15px 25px 9px;
+  }
+
+  .contact hr {
+    display: block;
+    width: 100%;
+    margin-top: 110px;
+  }
+
+  .contact {
+    background-image: url(./images/contact\ form-illustratoin-3-desktop.png), url(./images/illustration-1-contact-form-desktop.png), url(./images/illustration-2-contact-form-desktop@2x.png);
+    background-repeat: no-repeat;
+    background-position: bottom 45px right 0, bottom 45px left 0, bottom 110px left 270px;
+    background-color: #fff;
+    background-size: 130px;
+  }
+
+  .social-icons {
+    margin: 15px auto 30px auto;
+  }
+
+  .terminal-line {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .my-info .name {
+    display: none;
+  }
+
+  .my-info .harmburger {
+    display: none;
+  }
+
+  .my-info-ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  .my-info-ul li {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    list-style-type: none;
+    padding: 20px 10px 20px 10px;
+  }
+
+  .first-background {
+    width: 100%;
+    height: 110vh;
+    background-image: url('./images/front-page-desktop.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-color: #fff;
+  }
+
+  .first-background h1 {
+    font-size: 35px;
+    line-height: 52px;
+  }
+
+  .first-background h2 {
+    font-size: 35px;
+    line-height: 52px;
+  }
+
+  .first-background p {
+    width: 61.4%;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 28px auto 10px auto;
+  }
+
+  .work hr {
+    display: none;
+  }
+
+  .my-recent-work {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    margin: 0 20px;
+  }
+
+  .btn {
+    width: 38%;
+    padding: 6px 5px;
+  }
+
+  .about-me .btn-2 {
+    width: 15%;
+  }
+
+  .recent-work {
+    height: 75vh;
+    margin: 100px auto -72px auto;
+    width: 87%;
+  }
+
+  .box {
+    width: 100%;
+    height: 47.8%;
+    background-color: #fff;
+    box-sizing: border-box;
+    margin: 250px auto 7px auto;
+    border-radius: 16px;
+  }
+
+  .box ul {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 2px;
+    margin-right: 10px;
+  }
+
+  .about-me {
+    background-image: url(./images/illustration-about\ me-1-desktop@2x.png), url(./images/illustration-about-me-2-desktop@2x.png);
+    background-repeat: no-repeat;
+    background-position: top 10px right 0, bottom 5px left 0;
+    background-size: 150px;
+    background-color: #fff;
+  }
+
+  .about-me p {
+    margin: 0 auto;
+    width: 61.4%;
+    padding: 18px 28px 72px 30px;
+  }
+
+  .contact-details .btn {
+    width: 37%;
+    margin: 5px 24px;
+  }
+
+  .tech {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    margin: 0 20px;
+  }
+
+  .contact-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    margin: 80px 20px 40px 24px;
+  }
+
+  input {
+    padding: 15px 0 15px 15px;
+    width: 94%;
+  }
+
+  textarea {
+    font-size: 15px;
+    list-style-type: none;
+    width: 94%;
+  }
+
+  .contact p {
+    font-size: 30px;
+    padding: 54px 15px 25px 9px;
+  }
+
+  .contact hr {
+    display: block;
+    width: 100%;
+    margin-top: 110px;
+  }
+
+  .contact {
+    background-image: url(./images/contact\ form-illustratoin-3-desktop.png), url(./images/illustration-1-contact-form-desktop.png), url(./images/illustration-2-contact-form-desktop@2x.png);
+    background-repeat: no-repeat;
+    background-position: bottom 45px right 0, bottom 45px left 0, bottom 110px left 270px;
+    background-color: #fff;
+    background-size: 130px;
+  }
+
+  .social-icons {
+    margin: 15px auto 30px auto;
+  }
+
+  .terminal-line {
+    display: none;
+  }
 }
