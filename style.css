@@ -375,7 +375,7 @@ textarea {
   margin: 10px auto;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .my-info .name {
     display: none;
   }
@@ -535,7 +535,7 @@ textarea {
   .terminal-line {
     display: none;
   }
-}
+} */
 
 @media (min-width: 1024px) {
   .my-info .name {
