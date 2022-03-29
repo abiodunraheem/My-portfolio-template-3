@@ -9,13 +9,14 @@
 - Html and Css
 
 ## Live Demo
-[Live Demo](https://abiodunraheem.github.io/Portfolio-template2)
+
+[Live Demo](https://abiodunraheem.github.io/Portfolio-template3)
 
 ## To get a local copy run the following steps:
 
-- Copy this link [this link](https://github.com/abiodunraheem/Portfolio-template2)
+- Copy this link [this link](https://github.com/abiodunraheem/Portfolio-template3)
 - Open your terminal or command line
-- Run "git clone Paste [this link](https://github.com/abiodunraheem/Portfolio-template2)"
+- Run "git clone Paste [this link](https://github.com/abiodunraheem/Portfolio-template3)"
 - Open the folder with your code editor
 - Create a branch to work on
 - Now You can edit the code and make a pull request
