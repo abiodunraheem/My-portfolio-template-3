@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio Template 4</title>
+    <title>My Portfolio Template 3</title>
     <link    rel="stylesheet"    href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"    />    <link    rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"    /><!-- font awesome icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
     <header class="my-info">
         <nav>
             <a href="#" class="name">Welcome</a>
-            <a href="#" class="harmburger">&#9776;</a>
+            <a href="#" class="harmburger" id="bars">&#9776;</a>
         </nav>
     </header>
 
@@ -48,7 +48,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="portfolio">
         <div class="work">
             <h1>My Recent Works</h1>
             <hr>
@@ -153,7 +153,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="about">
         <div class="about-me1"></div>
         <div class="about-me">
             <h2>About me</h2>
@@ -207,28 +207,29 @@
         </div>
     </section>
 
-    <section>
+    <section id="contact">
         <div class="contact">
             <div class="contact-details">
                 <p>
                     I'm always interested in hearing about new projects,
                     so if you'd like to chat please get in touch.
                 </p>
-                <form action="https://formspree.io/f/xpzbdbeq" method="post">
+                <form action="https://formspree.io/f/xpzbdbeq" id="form" method="post">
                     <ul>
                         <li class="input-details">
-                            <input type="text" placeholder="Abiodun" aria-label="Name" maxlength="30" required>
+                            <input type="text" placeholder="Abiodun" id="fullName" aria-label="Name" maxlength="30" required>
                         </li>
                         <li class="input-details">
-                            <input type="email" placeholder="raheemabiodun23@gmail.com" aria-label="Email" required>
+                            <input type="email" placeholder="raheemabiodun23@gmail.com" id="email" aria-label="Email" required>
                         </li>
                         <li class="text-area">
-                            <textarea name="Enter-text" cols="41" rows="5" placeholder="Enter text here" aria-label="Message" maxlength="500" required></textarea>
+                            <textarea name="Enter-text" id="message" cols="41" rows="5" placeholder="Enter text here" aria-label="Message" maxlength="500" required></textarea>
                         </li>
                     </ul>
                     <div class="btn">
                         <button name="button" type="submit">See Project</button>
                     </div>
+                    <div id="error"></div>
                 </form>
             </div>
             <hr>
@@ -245,5 +246,24 @@
             </div>
         </div>
     </section>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-ul">
+          <span class="close-btn" id="closeBtn">&times;</span>
+          <ul class="mobile-hr">
+            <li><a class="link" href="#portfolio">Portfolio</a></li>
+            <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+          </ul>
+          <ul class="mobile-hr">
+            <li><a class="link" href="#about">About</a></li>
+            <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+          </ul>
+          <ul class="mobile-hr">
+            <li><a class="link" href="#contact">Contact</a></li>
+            <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+          </ul>
+        </div>
+    </div>
+    <script src="text.js"></script>
 </body>
 </html>
