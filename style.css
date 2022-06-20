@@ -234,11 +234,12 @@ body {
 }
 
 .btn {
-  width: 32%;
-  padding: 6px 5px;
+  width: 37%;
+  padding: 10px 5px;
   background: #36b37e;
   margin: 5px auto;
   text-align: center;
+  border-radius: 5px;
 }
 
 button {
@@ -432,9 +433,83 @@ textarea {
   margin: 10px auto;
 }
 
+.mobile-hide {
+  display: none;
+}
+
+.mobile-popup {
+  display: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+  height: 726px;
+  margin: 20px 20px 10px 20px;
+  padding-top: 30px;
+  width: 90%;
+}
+
+.mobile-popup h2 {
+  color: #172b4d;
+  font-size: 32px;
+  line-height: 44px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.mobile-popup ul {
+  display: flex;
+}
+
+.mobile-popup ul li {
+  list-style-type: none;
+  padding: 8px 1px 10px 1px;
+  border: 1px solid #ebf0ee;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  box-sizing: border-box;
+  color: #3a4a42;
+  background: #ebf0ee;
+  border-radius: 7px;
+  width: 87px;
+  height: 34px;
+  text-align: center;
+  font-size: 12px;
+  margin: 10px 12px 10px 0;
+}
+
+.mobile-popup p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  color: #3a4a42;
+  padding: 10px 15px 15px 0;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.popup-btn button {
+  margin: 10px 12px 10px 0;
+}
+
+.mobile-popup .desktop-hide {
+  display: flex;
+}
+
+.mobile-popup .mobile-hide {
+  display: none;
+}
+
+@media (max-width: 320px) {
+  .mobile-popup .popup-image img {
+    width: 280px;
+  }
+}
+
 @media (min-width: 1024px) {
   .my-info .name {
-    display: none;
+    display: flex;
   }
 
   .my-info .harmburger {
@@ -598,5 +673,13 @@ textarea {
 
   .terminal-line {
     display: none;
+  }
+
+  .mobile-popup .desktop-hide {
+    display: none;
+  }
+  
+  .mobile-popup .mobile-hide {
+    display: flex;
   }
 }
